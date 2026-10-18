@@ -81,7 +81,7 @@ def generate_word_report():
     meta_table = doc.add_table(rows=4, cols=2)
     meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     meta_data = [
-        ("Candidate Name:", "[STUDENT_NAME]"),
+        ("Candidate Name:", "G. Rakesh Kumar"),
         ("Roll / Student ID:", "[STUDENT_ID]"),
         ("Course / Department:", "[COURSE_OR_DEPARTMENT]"),
         ("Institution / Mentor:", "[INSTITUTION_NAME]  |  Mentor: [MENTOR_NAME]")
@@ -106,7 +106,7 @@ def generate_word_report():
     add_styled_heading("Certificate of Completion", 1)
     add_body_p(
         "This is to certify that the project report entitled \"Agentic AI Study & Productivity Assistant\" "
-        "is a bonafide record of independent software development and research work carried out by [STUDENT_NAME] "
+        "is a bonafide record of independent software development and research work carried out by G. Rakesh Kumar "
         "(Roll / ID: [STUDENT_ID]) in partial fulfillment of the academic requirements for the completion of the course "
         "Agentic AI Systems & Engineering under my mentorship.\n\n"
         "The project demonstrates genuine algorithmic implementations of hierarchical goal decomposition, "
@@ -128,7 +128,7 @@ def generate_word_report():
         "software frameworks, and foundational concepts utilized during the design and construction of this system "
         "have been duly cited. No live research or institutional certifications have been fabricated.\n\n"
         "Candidate Signature: ____________________________________\n"
-        "Candidate Name: [STUDENT_NAME]\n"
+        "Candidate Name: G. Rakesh Kumar\n"
         "Student ID: [STUDENT_ID]\n"
         "Date: [SUBMISSION_DATE]"
     )
@@ -374,7 +374,7 @@ def generate_powerpoint_presentation():
     p_sub.space_before = PptxPt(14)
     
     p_meta = tf1.add_paragraph()
-    p_meta.text = "\nStudent: [STUDENT_NAME]  |  ID: [STUDENT_ID]\nInstitution: [INSTITUTION_NAME]  |  Evaluation Date: [SUBMISSION_DATE]"
+    p_meta.text = "\nStudent: G. Rakesh Kumar  |  ID: [STUDENT_ID]\nInstitution: [INSTITUTION_NAME]  |  Evaluation Date: [SUBMISSION_DATE]"
     p_meta.font.size = PptxPt(15)
     p_meta.font.color.rgb = PptxRGBColor(180, 200, 220)
 
