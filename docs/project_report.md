@@ -11,7 +11,7 @@
 
 | **Submitted By:** | **Under the Guidance Of:** |
 |---|---|
-| **Student Name:** G. Rakesh Kumar | **Mentor / Evaluator:** `[MENTOR_NAME]` |
+| **Student Names:** G. Rakesh Kumar and M.Harshitha | **Mentor / Evaluator:** `[MENTOR_NAME]` |
 | **Roll / Student ID:** `[STUDENT_ID]` | **Designation:** `[MENTOR_DESIGNATION]` |
 | **Department:** `[DEPARTMENT_NAME]` | **Institution / Provider:** `[INSTITUTION_OR_PROVIDER]` |
 | **Submission Date:** `[SUBMISSION_DATE]` | **Location:** `[CITY_COUNTRY]` |
@@ -20,7 +20,7 @@
 
 ### [CERTIFICATE OF COMPLETION]
 
-This is to certify that the project entitled **"Agentic AI Study & Productivity Assistant"** submitted by **G. Rakesh Kumar** (`[STUDENT_ID]`) in partial fulfillment of the requirements for the completion of the course **Agentic AI Engineering** is a bonafide record of independent software development carried out under my supervision.
+This is to certify that the project entitled **"Agentic AI Study & Productivity Assistant"** submitted by **G. Rakesh Kumar and M.Harshitha** (`[STUDENT_ID]`) in partial fulfillment of the requirements for the completion of the course **Agentic AI Engineering** is a bonafide record of independent software development carried out under my supervision.
 
 The results embodied in this report have been thoroughly evaluated, tested via automated test suites, and verified in accordance with modern agentic AI safety, planning, and orchestration benchmarks.
 
@@ -33,22 +33,22 @@ Date: `[SUBMISSION_DATE]` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ### [DECLARATION]
 
-I, **G. Rakesh Kumar**, hereby declare that the project entitled **"Agentic AI Study & Productivity Assistant"** submitted to `[INSTITUTION_OR_PROVIDER]` is an original piece of software engineering and research authored by me. 
+We, **G. Rakesh Kumar and M.Harshitha**, hereby declare that the project entitled **"Agentic AI Study & Productivity Assistant"** submitted to `[INSTITUTION_OR_PROVIDER]` is an original piece of software engineering and research authored by us. 
 
 All external libraries, references, and frameworks utilized during the development of this project have been duly cited and acknowledged. This codebase contains strictly genuine algorithmic implementations, verified test outcomes, and no fabricated credentials or external results.
 
 <br>
-**Signature of the Candidate:** ______________________________  
-**Name:** G. Rakesh Kumar  
+**Signatures of the Candidates:** ___________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ___________________________  
+**Names:** G. Rakesh Kumar and M.Harshitha  
 **Date:** `[SUBMISSION_DATE]`  
 
 ---
 
 ### [ACKNOWLEDGEMENTS]
 
-I express my deepest gratitude to my course instructor `[MENTOR_NAME]` and the faculty of `[INSTITUTION_OR_PROVIDER]` for their indispensable guidance, technical critiques, and encouragement throughout the duration of this project.
+We express our deepest gratitude to our course instructor `[MENTOR_NAME]` and the faculty of `[INSTITUTION_OR_PROVIDER]` for their indispensable guidance, technical critiques, and encouragement throughout the duration of this project.
 
-I am also thankful to the open-source community for developing high-grade developer tools including Streamlit, Python, Pydantic, and Pytest, which enabled the construction of a robust, verifiable agentic application.
+We are also thankful to the open-source community for developing high-grade developer tools including Streamlit, Python, Pydantic, and Pytest, which enabled the construction of a robust, verifiable agentic application.
 
 ---
 

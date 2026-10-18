@@ -15,15 +15,17 @@ else:
     print(f"Total Paragraphs: {len(doc.paragraphs)}")
     print(f"Total Tables: {len(doc.tables)}")
     
-    # Check for student name
+    # Check for student names
     doc_text = " ".join([p.text for p in doc.paragraphs] + [c.text for t in doc.tables for r in t.rows for c in r.cells])
-    if "G. Rakesh Kumar" in doc_text:
-        print("[SUCCESS] Candidate Name 'G. Rakesh Kumar' found in Word report.")
+    if "G. Rakesh Kumar and M.Harshitha" in doc_text:
+        print("[SUCCESS] Candidate Names 'G. Rakesh Kumar and M.Harshitha' found in Word report.")
+    elif "G. Rakesh Kumar" in doc_text and "M.Harshitha" in doc_text:
+        print("[SUCCESS] Both 'G. Rakesh Kumar' and 'M.Harshitha' found in Word report.")
     else:
-        print("[WARNING] Candidate Name 'G. Rakesh Kumar' missing from Word report.")
+        print("[WARNING] Candidate Names missing or incomplete in Word report.")
         
     placeholders_found = set()
-    for word in ["[STUDENT_ID]", "[COURSE_OR_DEPARTMENT]", "[INSTITUTION_NAME]", "[SUBMISSION_DATE]", "[MENTOR_NAME]"]:
+    for word in ["[STUDENT_ID]", "[COURSE_OR_DEPARTMENT]", "[INSTITUTION_NAME]", "[SUBMISSION_DATE]", "[MENTOR_NAME]", "[SEAL]"]:
         if word in doc_text:
             placeholders_found.add(word)
     print(f"Institutional Placeholders remaining for submission: {sorted(list(placeholders_found))}")
@@ -36,9 +38,11 @@ else:
     print(f"File exists: {pptx_path}")
     print(f"Total Slides: {len(prs.slides)}")
     ppt_text = " ".join([shape.text_frame.text for s in prs.slides for shape in s.shapes if shape.has_text_frame])
-    if "G. Rakesh Kumar" in ppt_text:
-        print("[SUCCESS] Candidate Name 'G. Rakesh Kumar' found in PowerPoint presentation.")
+    if "G. Rakesh Kumar and M.Harshitha" in ppt_text:
+        print("[SUCCESS] Candidate Names 'G. Rakesh Kumar and M.Harshitha' found in PowerPoint presentation.")
+    elif "G. Rakesh Kumar" in ppt_text and "M.Harshitha" in ppt_text:
+        print("[SUCCESS] Both 'G. Rakesh Kumar' and 'M.Harshitha' found in PowerPoint presentation.")
     else:
-        print("[WARNING] Candidate Name 'G. Rakesh Kumar' missing from PowerPoint presentation.")
+        print("[WARNING] Candidate Names missing from PowerPoint presentation.")
 
 print("\n[SUCCESS] Inspection script complete.")

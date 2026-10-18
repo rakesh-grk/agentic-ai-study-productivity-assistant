@@ -81,7 +81,7 @@ def generate_word_report():
     meta_table = doc.add_table(rows=4, cols=2)
     meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     meta_data = [
-        ("Candidate Name:", "G. Rakesh Kumar"),
+        ("Candidate Names:", "G. Rakesh Kumar and M.Harshitha"),
         ("Roll / Student ID:", "[STUDENT_ID]"),
         ("Course / Department:", "[COURSE_OR_DEPARTMENT]"),
         ("Institution / Mentor:", "[INSTITUTION_NAME]  |  Mentor: [MENTOR_NAME]")
@@ -106,7 +106,7 @@ def generate_word_report():
     add_styled_heading("Certificate of Completion", 1)
     add_body_p(
         "This is to certify that the project report entitled \"Agentic AI Study & Productivity Assistant\" "
-        "is a bonafide record of independent software development and research work carried out by G. Rakesh Kumar "
+        "is a bonafide record of independent software development and research work carried out by G. Rakesh Kumar and M.Harshitha "
         "(Roll / ID: [STUDENT_ID]) in partial fulfillment of the academic requirements for the completion of the course "
         "Agentic AI Systems & Engineering under my mentorship.\n\n"
         "The project demonstrates genuine algorithmic implementations of hierarchical goal decomposition, "
@@ -123,21 +123,21 @@ def generate_word_report():
     # 3. DECLARATION & ACKNOWLEDGEMENT
     add_styled_heading("Declaration", 1)
     add_body_p(
-        "I hereby declare that this project report entitled \"Agentic AI Study & Productivity Assistant\" "
-        "is an authentic piece of software engineering and research completed by me. All literature, open-source "
+        "We hereby declare that this project report entitled \"Agentic AI Study & Productivity Assistant\" "
+        "is an authentic piece of software engineering and research completed by us. All literature, open-source "
         "software frameworks, and foundational concepts utilized during the design and construction of this system "
         "have been duly cited. No live research or institutional certifications have been fabricated.\n\n"
-        "Candidate Signature: ____________________________________\n"
-        "Candidate Name: G. Rakesh Kumar\n"
+        "Candidate Signatures: ____________________________________     ____________________________________\n"
+        "Candidate Names: G. Rakesh Kumar and M.Harshitha\n"
         "Student ID: [STUDENT_ID]\n"
         "Date: [SUBMISSION_DATE]"
     )
 
     add_styled_heading("Acknowledgements", 1)
     add_body_p(
-        "I express my sincere gratitude to my course instructor [MENTOR_NAME] and the administrative staff of "
+        "We express our sincere gratitude to our course instructor [MENTOR_NAME] and the administrative staff of "
         "[INSTITUTION_NAME] for providing the guidance, curriculum standards, and infrastructure that enabled the "
-        "development of this project. I am also indebted to the open-source community for developing high-grade developer "
+        "development of this project. We are also indebted to the open-source community for developing high-grade developer "
         "tools including Python, Streamlit, Pydantic, and Pytest."
     )
     doc.add_page_break()
@@ -374,7 +374,7 @@ def generate_powerpoint_presentation():
     p_sub.space_before = PptxPt(14)
     
     p_meta = tf1.add_paragraph()
-    p_meta.text = "\nStudent: G. Rakesh Kumar  |  ID: [STUDENT_ID]\nInstitution: [INSTITUTION_NAME]  |  Evaluation Date: [SUBMISSION_DATE]"
+    p_meta.text = "\nStudents: G. Rakesh Kumar and M.Harshitha  |  ID: [STUDENT_ID]\nInstitution: [INSTITUTION_NAME]  |  Evaluation Date: [SUBMISSION_DATE]"
     p_meta.font.size = PptxPt(15)
     p_meta.font.color.rgb = PptxRGBColor(180, 200, 220)
 

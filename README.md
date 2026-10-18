@@ -2,7 +2,7 @@
 
 > **An Autonomous Multi-Agent System with Planning, Local Knowledge Retrieval, Safe Tool Calling, Persistent Memory, and Critic Verification.**  
 > *Course-Completion Project in Agentic AI Engineering*  
-> **Candidate / Developer:** G. Rakesh Kumar
+> **Candidates / Developers:** G. Rakesh Kumar and M.Harshitha
 
 ---
 
@@ -194,7 +194,7 @@ tests/test_tools.py::test_summarize_text_document_validation PASSED      [100%]
 - **Word Document (.docx):** `artifacts/project_report.docx`
 - **PowerPoint Presentation (.pptx):** `artifacts/project_presentation.pptx`
 
-*Candidate Name: G. Rakesh Kumar. Placeholders for `[STUDENT_ID]`, `[INSTITUTION_NAME]`, and `[SUBMISSION_DATE]` can be directly customized for your final submission.*
+*Candidate Names: G. Rakesh Kumar and M.Harshitha. Placeholders for `[STUDENT_ID]`, `[INSTITUTION_NAME]`, and `[SUBMISSION_DATE]` can be directly customized for your final submission.*
 
 ---
 
