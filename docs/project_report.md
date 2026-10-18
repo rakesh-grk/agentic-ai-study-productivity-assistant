@@ -9,44 +9,55 @@
 **COURSE:** Autonomous Agentic AI Systems & Engineering  
 **ACADEMIC YEAR:** 2025–2026  
 
-| **Submitted By:** | **Under the Guidance Of:** |
-|---|---|
-| **Student Names:** G. Rakesh Kumar and M.Harshitha | **Mentor / Evaluator:** `[MENTOR_NAME]` |
-| **Roll / Student ID:** `[STUDENT_ID]` | **Designation:** `[MENTOR_DESIGNATION]` |
-| **Department:** `[DEPARTMENT_NAME]` | **Institution / Provider:** `[INSTITUTION_OR_PROVIDER]` |
-| **Submission Date:** `[SUBMISSION_DATE]` | **Location:** `[CITY_COUNTRY]` |
+| S.No | Candidate / Team Member Name | Team Roll Number |
+|:---:|:---|:---|
+| 1 | G. Rakesh Kumar | `[ROLL_NO_1]` |
+| 2 | M. Harshitha | `[ROLL_NO_2]` |
+| 3 | Team Member 3 | `[ROLL_NO_3]` |
+| 4 | Team Member 4 | `[ROLL_NO_4]` |
+| 5 | Team Member 5 | `[ROLL_NO_5]` |
 
 ---
 
-### [CERTIFICATE OF COMPLETION]
+### CERTIFICATE OF COMPLETION
 
-This is to certify that the project entitled **"Agentic AI Study & Productivity Assistant"** submitted by **G. Rakesh Kumar and M.Harshitha** (`[STUDENT_ID]`) in partial fulfillment of the requirements for the completion of the course **Agentic AI Engineering** is a bonafide record of independent software development carried out under my supervision.
+This is to certify that the project entitled **"Agentic AI Study & Productivity Assistant"** submitted by the project team members:
+- **G. Rakesh Kumar** (Roll No: `[ROLL_NO_1]`)
+- **M. Harshitha** (Roll No: `[ROLL_NO_2]`)
+- **Team Member 3** (Roll No: `[ROLL_NO_3]`)
+- **Team Member 4** (Roll No: `[ROLL_NO_4]`)
+- **Team Member 5** (Roll No: `[ROLL_NO_5]`)
+
+in partial fulfillment of the requirements for the completion of the course **Agentic AI Engineering** is a bonafide record of independent software development carried out under academic supervision.
 
 The results embodied in this report have been thoroughly evaluated, tested via automated test suites, and verified in accordance with modern agentic AI safety, planning, and orchestration benchmarks.
 
 <br><br>
-______________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ______________________________  
+____________________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ____________________________________  
 **Course Mentor / Instructor** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Head of Department / Director**  
-Date: `[SUBMISSION_DATE]` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Institution Seal: `[SEAL]`
 
 ---
 
-### [DECLARATION]
+### DECLARATION
 
-We, **G. Rakesh Kumar and M.Harshitha**, hereby declare that the project entitled **"Agentic AI Study & Productivity Assistant"** submitted to `[INSTITUTION_OR_PROVIDER]` is an original piece of software engineering and research authored by us. 
+We, **G. Rakesh Kumar, M. Harshitha, and Team Members**, hereby declare that the project entitled **"Agentic AI Study & Productivity Assistant"** is an original piece of software engineering and research authored by our team. 
 
 All external libraries, references, and frameworks utilized during the development of this project have been duly cited and acknowledged. This codebase contains strictly genuine algorithmic implementations, verified test outcomes, and no fabricated credentials or external results.
 
 <br>
-**Signatures of the Candidates:** ___________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ___________________________  
-**Names:** G. Rakesh Kumar and M.Harshitha  
-**Date:** `[SUBMISSION_DATE]`  
+**Signatures of the Candidates:**
+
+1. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** G. Rakesh Kumar (Roll No: `[ROLL_NO_1]`)  
+2. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** M. Harshitha (Roll No: `[ROLL_NO_2]`)  
+3. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** Team Member 3 (Roll No: `[ROLL_NO_3]`)  
+4. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** Team Member 4 (Roll No: `[ROLL_NO_4]`)  
+5. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** Team Member 5 (Roll No: `[ROLL_NO_5]`)  
 
 ---
 
-### [ACKNOWLEDGEMENTS]
+### ACKNOWLEDGEMENTS
 
-We express our deepest gratitude to our course instructor `[MENTOR_NAME]` and the faculty of `[INSTITUTION_OR_PROVIDER]` for their indispensable guidance, technical critiques, and encouragement throughout the duration of this project.
+We express our deepest gratitude to our course mentors, instructors, and evaluators for their indispensable guidance, technical critiques, and encouragement throughout the duration of this project.
 
 We are also thankful to the open-source community for developing high-grade developer tools including Streamlit, Python, Pydantic, and Pytest, which enabled the construction of a robust, verifiable agentic application.
 

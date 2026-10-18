@@ -78,45 +78,50 @@ def generate_word_report():
     r_s.font.size = Pt(12)
     r_s.font.bold = True
 
-    meta_table = doc.add_table(rows=4, cols=2)
+    meta_table = doc.add_table(rows=6, cols=3)
     meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    meta_data = [
-        ("Candidate Names:", "G. Rakesh Kumar and M.Harshitha"),
-        ("Roll / Student ID:", "[STUDENT_ID]"),
-        ("Course / Department:", "[COURSE_OR_DEPARTMENT]"),
-        ("Institution / Mentor:", "[INSTITUTION_NAME]  |  Mentor: [MENTOR_NAME]")
-    ]
-    for i, (k, v) in enumerate(meta_data):
-        row = meta_table.rows[i]
-        c0 = row.cells[0].paragraphs[0].add_run(k)
-        c0.font.bold = True
-        c0.font.name = 'Calibri'
-        c1 = row.cells[1].paragraphs[0].add_run(v)
-        c1.font.name = 'Calibri'
+    table_headers = ["S.No", "Candidate / Team Member Name", "Team Roll Number"]
+    for j, h in enumerate(table_headers):
+        cell = meta_table.rows[0].cells[j]
+        r = cell.paragraphs[0].add_run(h)
+        r.font.bold = True
+        r.font.name = 'Calibri'
         
-    p_date = doc.add_paragraph()
-    p_date.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_date.paragraph_format.space_before = Pt(36)
-    r_d = p_date.add_run("Submission Date: [SUBMISSION_DATE]")
-    r_d.font.name = 'Calibri'
-    r_d.font.bold = True
+    team_rows = [
+        ("1", "G. Rakesh Kumar", "[ROLL_NO_1]"),
+        ("2", "M. Harshitha", "[ROLL_NO_2]"),
+        ("3", "Team Member 3", "[ROLL_NO_3]"),
+        ("4", "Team Member 4", "[ROLL_NO_4]"),
+        ("5", "Team Member 5", "[ROLL_NO_5]")
+    ]
+    for i, row_data in enumerate(team_rows):
+        row = meta_table.rows[i + 1]
+        for j, val in enumerate(row_data):
+            c = row.cells[j].paragraphs[0].add_run(val)
+            c.font.name = 'Calibri'
+            if j == 0:
+                row.cells[j].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+        
     doc.add_page_break()
 
     # 2. CERTIFICATE OF COMPLETION
     add_styled_heading("Certificate of Completion", 1)
     add_body_p(
         "This is to certify that the project report entitled \"Agentic AI Study & Productivity Assistant\" "
-        "is a bonafide record of independent software development and research work carried out by G. Rakesh Kumar and M.Harshitha "
-        "(Roll / ID: [STUDENT_ID]) in partial fulfillment of the academic requirements for the completion of the course "
-        "Agentic AI Systems & Engineering under my mentorship.\n\n"
+        "is a bonafide record of independent software development and research work carried out by the team members:\n"
+        "• G. Rakesh Kumar (Roll No: [ROLL_NO_1])\n"
+        "• M. Harshitha (Roll No: [ROLL_NO_2])\n"
+        "• Team Member 3 (Roll No: [ROLL_NO_3])\n"
+        "• Team Member 4 (Roll No: [ROLL_NO_4])\n"
+        "• Team Member 5 (Roll No: [ROLL_NO_5])\n\n"
+        "in partial fulfillment of the academic requirements for the completion of the course "
+        "Agentic AI Systems & Engineering under academic mentorship.\n\n"
         "The project demonstrates genuine algorithmic implementations of hierarchical goal decomposition, "
         "allowlisted tool dispatching, AST-parsed arithmetic calculations, critic-driven verification loops, "
         "and persistent SQLite episodic memory. All 24 automated unit and integration tests have been independently "
         "executed and verified on Windows with Python 3.14.5 and pytest 9.1.1.\n\n\n\n"
         "____________________________________                     ____________________________________\n"
-        "Course Mentor / Evaluator                                Department Head / Institutional Authority\n"
-        "Name: [MENTOR_NAME]                                      Institution: [INSTITUTION_NAME]\n"
-        "Date: [SUBMISSION_DATE]                                  Official Seal: [SEAL]"
+        "Course Mentor / Instructor                               Department Head / Institutional Authority"
     )
     doc.add_page_break()
 
@@ -124,21 +129,23 @@ def generate_word_report():
     add_styled_heading("Declaration", 1)
     add_body_p(
         "We hereby declare that this project report entitled \"Agentic AI Study & Productivity Assistant\" "
-        "is an authentic piece of software engineering and research completed by us. All literature, open-source "
+        "is an authentic piece of software engineering and research completed by our team. All literature, open-source "
         "software frameworks, and foundational concepts utilized during the design and construction of this system "
         "have been duly cited. No live research or institutional certifications have been fabricated.\n\n"
-        "Candidate Signatures: ____________________________________     ____________________________________\n"
-        "Candidate Names: G. Rakesh Kumar and M.Harshitha\n"
-        "Student ID: [STUDENT_ID]\n"
-        "Date: [SUBMISSION_DATE]"
+        "Signatures of the Candidates:\n"
+        "1. ____________________________________     G. Rakesh Kumar (Roll No: [ROLL_NO_1])\n"
+        "2. ____________________________________     M. Harshitha (Roll No: [ROLL_NO_2])\n"
+        "3. ____________________________________     Team Member 3 (Roll No: [ROLL_NO_3])\n"
+        "4. ____________________________________     Team Member 4 (Roll No: [ROLL_NO_4])\n"
+        "5. ____________________________________     Team Member 5 (Roll No: [ROLL_NO_5])"
     )
 
     add_styled_heading("Acknowledgements", 1)
     add_body_p(
-        "We express our sincere gratitude to our course instructor [MENTOR_NAME] and the administrative staff of "
-        "[INSTITUTION_NAME] for providing the guidance, curriculum standards, and infrastructure that enabled the "
-        "development of this project. We are also indebted to the open-source community for developing high-grade developer "
-        "tools including Python, Streamlit, Pydantic, and Pytest."
+        "We express our sincere gratitude to our course mentors, instructors, and evaluators for providing the "
+        "guidance, curriculum standards, and infrastructure that enabled the development of this project. "
+        "We are also indebted to the open-source community for developing high-grade developer tools including "
+        "Python, Streamlit, Pydantic, and Pytest."
     )
     doc.add_page_break()
 
@@ -374,9 +381,16 @@ def generate_powerpoint_presentation():
     p_sub.space_before = PptxPt(14)
     
     p_meta = tf1.add_paragraph()
-    p_meta.text = "\nStudents: G. Rakesh Kumar and M.Harshitha  |  ID: [STUDENT_ID]\nInstitution: [INSTITUTION_NAME]  |  Evaluation Date: [SUBMISSION_DATE]"
-    p_meta.font.size = PptxPt(15)
-    p_meta.font.color.rgb = PptxRGBColor(180, 200, 220)
+    p_meta.text = (
+        "\nProject Team & Roll Numbers:\n"
+        "• G. Rakesh Kumar (Roll No: [ROLL_NO_1])\n"
+        "• M. Harshitha (Roll No: [ROLL_NO_2])\n"
+        "• Team Member 3 (Roll No: [ROLL_NO_3])\n"
+        "• Team Member 4 (Roll No: [ROLL_NO_4])\n"
+        "• Team Member 5 (Roll No: [ROLL_NO_5])"
+    )
+    p_meta.font.size = PptxPt(13)
+    p_meta.font.color.rgb = PptxRGBColor(180, 210, 235)
 
     # Slide 2: Problem Statement
     s2 = prs.slides.add_slide(blank_layout)

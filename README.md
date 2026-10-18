@@ -194,7 +194,12 @@ tests/test_tools.py::test_summarize_text_document_validation PASSED      [100%]
 - **Word Document (.docx):** `artifacts/project_report.docx`
 - **PowerPoint Presentation (.pptx):** `artifacts/project_presentation.pptx`
 
-*Candidate Names: G. Rakesh Kumar and M.Harshitha. Placeholders for `[STUDENT_ID]`, `[INSTITUTION_NAME]`, and `[SUBMISSION_DATE]` can be directly customized for your final submission.*
+*Project Team Members & Roll Numbers:*
+- **G. Rakesh Kumar** — Roll No: `[ROLL_NO_1]`
+- **M. Harshitha** — Roll No: `[ROLL_NO_2]`
+- **Team Member 3** — Roll No: `[ROLL_NO_3]`
+- **Team Member 4** — Roll No: `[ROLL_NO_4]`
+- **Team Member 5** — Roll No: `[ROLL_NO_5]`
 
 ---
 
