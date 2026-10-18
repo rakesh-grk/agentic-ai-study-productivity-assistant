@@ -78,44 +78,23 @@ def generate_word_report():
     r_s.font.size = Pt(12)
     r_s.font.bold = True
 
-    meta_table = doc.add_table(rows=6, cols=3)
-    meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    table_headers = ["S.No", "Candidate / Team Member Name", "Team Roll Number"]
-    for j, h in enumerate(table_headers):
-        cell = meta_table.rows[0].cells[j]
-        r = cell.paragraphs[0].add_run(h)
-        r.font.bold = True
-        r.font.name = 'Calibri'
-        
-    team_rows = [
-        ("1", "G. Rakesh Kumar", "[ROLL_NO_1]"),
-        ("2", "M. Harshitha", "[ROLL_NO_2]"),
-        ("3", "Team Member 3", "[ROLL_NO_3]"),
-        ("4", "Team Member 4", "[ROLL_NO_4]"),
-        ("5", "Team Member 5", "[ROLL_NO_5]")
-    ]
-    for i, row_data in enumerate(team_rows):
-        row = meta_table.rows[i + 1]
-        for j, val in enumerate(row_data):
-            c = row.cells[j].paragraphs[0].add_run(val)
-            c.font.name = 'Calibri'
-            if j == 0:
-                row.cells[j].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
-        
+    p_team = doc.add_paragraph()
+    p_team.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r_team = p_team.add_run("SUBMITTED BY:\nTeam Number 22")
+    r_team.font.name = 'Arial'
+    r_team.font.size = Pt(13)
+    r_team.font.bold = True
+    r_team.font.color.rgb = RGBColor(11, 42, 74)
+
     doc.add_page_break()
 
     # 2. CERTIFICATE OF COMPLETION
     add_styled_heading("Certificate of Completion", 1)
     add_body_p(
         "This is to certify that the project report entitled \"Agentic AI Study & Productivity Assistant\" "
-        "is a bonafide record of independent software development and research work carried out by the team members:\n"
-        "• G. Rakesh Kumar (Roll No: [ROLL_NO_1])\n"
-        "• M. Harshitha (Roll No: [ROLL_NO_2])\n"
-        "• Team Member 3 (Roll No: [ROLL_NO_3])\n"
-        "• Team Member 4 (Roll No: [ROLL_NO_4])\n"
-        "• Team Member 5 (Roll No: [ROLL_NO_5])\n\n"
-        "in partial fulfillment of the academic requirements for the completion of the course "
-        "Agentic AI Systems & Engineering under academic mentorship.\n\n"
+        "is a bonafide record of independent software development and research work carried out and submitted by "
+        "Team Number 22 in partial fulfillment of the academic requirements for the completion of the course "
+        "Agentic AI Systems & Engineering.\n\n"
         "The project demonstrates genuine algorithmic implementations of hierarchical goal decomposition, "
         "allowlisted tool dispatching, AST-parsed arithmetic calculations, critic-driven verification loops, "
         "and persistent SQLite episodic memory. All 24 automated unit and integration tests have been independently "
@@ -128,16 +107,11 @@ def generate_word_report():
     # 3. DECLARATION & ACKNOWLEDGEMENT
     add_styled_heading("Declaration", 1)
     add_body_p(
-        "We hereby declare that this project report entitled \"Agentic AI Study & Productivity Assistant\" "
+        "We, the members of Team Number 22, hereby declare that this project report entitled \"Agentic AI Study & Productivity Assistant\" "
         "is an authentic piece of software engineering and research completed by our team. All literature, open-source "
         "software frameworks, and foundational concepts utilized during the design and construction of this system "
         "have been duly cited. No live research or institutional certifications have been fabricated.\n\n"
-        "Signatures of the Candidates:\n"
-        "1. ____________________________________     G. Rakesh Kumar (Roll No: [ROLL_NO_1])\n"
-        "2. ____________________________________     M. Harshitha (Roll No: [ROLL_NO_2])\n"
-        "3. ____________________________________     Team Member 3 (Roll No: [ROLL_NO_3])\n"
-        "4. ____________________________________     Team Member 4 (Roll No: [ROLL_NO_4])\n"
-        "5. ____________________________________     Team Member 5 (Roll No: [ROLL_NO_5])"
+        "Submitted by: Team Number 22"
     )
 
     add_styled_heading("Acknowledgements", 1)
@@ -381,15 +355,9 @@ def generate_powerpoint_presentation():
     p_sub.space_before = PptxPt(14)
     
     p_meta = tf1.add_paragraph()
-    p_meta.text = (
-        "\nProject Team & Roll Numbers:\n"
-        "• G. Rakesh Kumar (Roll No: [ROLL_NO_1])\n"
-        "• M. Harshitha (Roll No: [ROLL_NO_2])\n"
-        "• Team Member 3 (Roll No: [ROLL_NO_3])\n"
-        "• Team Member 4 (Roll No: [ROLL_NO_4])\n"
-        "• Team Member 5 (Roll No: [ROLL_NO_5])"
-    )
-    p_meta.font.size = PptxPt(13)
+    p_meta.text = "\nTeam: Team Number 22\nCourse: Agentic AI Systems & Engineering"
+    p_meta.font.size = PptxPt(16)
+    p_meta.font.bold = True
     p_meta.font.color.rgb = PptxRGBColor(180, 210, 235)
 
     # Slide 2: Problem Statement

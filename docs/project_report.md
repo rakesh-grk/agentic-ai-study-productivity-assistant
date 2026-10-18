@@ -3,32 +3,18 @@
 
 ---
 
-### [TITLE PAGE]
+### TITLE PAGE
 
 **PROJECT TITLE:** Agentic AI Study & Productivity Assistant  
 **COURSE:** Autonomous Agentic AI Systems & Engineering  
 **ACADEMIC YEAR:** 2025–2026  
-
-| S.No | Candidate / Team Member Name | Team Roll Number |
-|:---:|:---|:---|
-| 1 | G. Rakesh Kumar | `[ROLL_NO_1]` |
-| 2 | M. Harshitha | `[ROLL_NO_2]` |
-| 3 | Team Member 3 | `[ROLL_NO_3]` |
-| 4 | Team Member 4 | `[ROLL_NO_4]` |
-| 5 | Team Member 5 | `[ROLL_NO_5]` |
+**SUBMITTED BY:** Team Number 22  
 
 ---
 
 ### CERTIFICATE OF COMPLETION
 
-This is to certify that the project entitled **"Agentic AI Study & Productivity Assistant"** submitted by the project team members:
-- **G. Rakesh Kumar** (Roll No: `[ROLL_NO_1]`)
-- **M. Harshitha** (Roll No: `[ROLL_NO_2]`)
-- **Team Member 3** (Roll No: `[ROLL_NO_3]`)
-- **Team Member 4** (Roll No: `[ROLL_NO_4]`)
-- **Team Member 5** (Roll No: `[ROLL_NO_5]`)
-
-in partial fulfillment of the requirements for the completion of the course **Agentic AI Engineering** is a bonafide record of independent software development carried out under academic supervision.
+This is to certify that the project entitled **"Agentic AI Study & Productivity Assistant"** submitted by **Team Number 22** in partial fulfillment of the requirements for the completion of the course **Agentic AI Engineering** is a bonafide record of independent software development carried out under academic supervision.
 
 The results embodied in this report have been thoroughly evaluated, tested via automated test suites, and verified in accordance with modern agentic AI safety, planning, and orchestration benchmarks.
 
@@ -40,18 +26,12 @@ ____________________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 ### DECLARATION
 
-We, **G. Rakesh Kumar, M. Harshitha, and Team Members**, hereby declare that the project entitled **"Agentic AI Study & Productivity Assistant"** is an original piece of software engineering and research authored by our team. 
+We, the members of **Team Number 22**, hereby declare that the project entitled **"Agentic AI Study & Productivity Assistant"** is an original piece of software engineering and research authored by our team. 
 
 All external libraries, references, and frameworks utilized during the development of this project have been duly cited and acknowledged. This codebase contains strictly genuine algorithmic implementations, verified test outcomes, and no fabricated credentials or external results.
 
 <br>
-**Signatures of the Candidates:**
-
-1. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** G. Rakesh Kumar (Roll No: `[ROLL_NO_1]`)  
-2. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** M. Harshitha (Roll No: `[ROLL_NO_2]`)  
-3. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** Team Member 3 (Roll No: `[ROLL_NO_3]`)  
-4. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** Team Member 4 (Roll No: `[ROLL_NO_4]`)  
-5. ___________________________ &nbsp;&nbsp;&nbsp;&nbsp; **Name:** Team Member 5 (Roll No: `[ROLL_NO_5]`)  
+**Submitted by:** Team Number 22  
 
 ---
 

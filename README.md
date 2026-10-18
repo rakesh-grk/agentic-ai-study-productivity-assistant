@@ -2,7 +2,7 @@
 
 > **An Autonomous Multi-Agent System with Planning, Local Knowledge Retrieval, Safe Tool Calling, Persistent Memory, and Critic Verification.**  
 > *Course-Completion Project in Agentic AI Engineering*  
-> **Candidates / Developers:** G. Rakesh Kumar and M.Harshitha
+> **Team:** Team Number 22
 
 ---
 
@@ -194,12 +194,7 @@ tests/test_tools.py::test_summarize_text_document_validation PASSED      [100%]
 - **Word Document (.docx):** `artifacts/project_report.docx`
 - **PowerPoint Presentation (.pptx):** `artifacts/project_presentation.pptx`
 
-*Project Team Members & Roll Numbers:*
-- **G. Rakesh Kumar** — Roll No: `[ROLL_NO_1]`
-- **M. Harshitha** — Roll No: `[ROLL_NO_2]`
-- **Team Member 3** — Roll No: `[ROLL_NO_3]`
-- **Team Member 4** — Roll No: `[ROLL_NO_4]`
-- **Team Member 5** — Roll No: `[ROLL_NO_5]`
+*Project Submission: Team Number 22.*
 
 ---
 
